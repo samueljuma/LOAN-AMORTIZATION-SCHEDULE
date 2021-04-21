@@ -8,3 +8,4 @@ A java Swing-based application for displaying loan amortization schedules
 * Technology : Java Swing - generating inteface
 #### Interface
 <image src="screenshots/1.png">
+![Alt text](/relative/path/to/1.jpg?raw=true "Gui")
