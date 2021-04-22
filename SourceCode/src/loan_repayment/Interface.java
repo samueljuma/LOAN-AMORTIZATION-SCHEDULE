@@ -1,9 +1,17 @@
 package loan_repayment;
+
+import static java.lang.System.exit;
+
 public class Interface extends javax.swing.JFrame {
+
+    double loan_amount;
+    double interest_Rates;
+    double loan_period;
 
     public Interface() {
         initComponents();
     }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -250,7 +258,7 @@ public class Interface extends javax.swing.JFrame {
     }//GEN-LAST:event_submitBtnActionPerformed
 
     private void exitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBtnActionPerformed
-
+        exit (0);
     }//GEN-LAST:event_exitBtnActionPerformed
 
     private void clearBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBtnActionPerformed
@@ -288,9 +296,9 @@ public class Interface extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Interface i =new Interface();
+                Interface i = new Interface();
                 i.schedule.setVisible(false);
-                 i.setVisible(true); 
+                i.setVisible(true);
             }
         });
     }
