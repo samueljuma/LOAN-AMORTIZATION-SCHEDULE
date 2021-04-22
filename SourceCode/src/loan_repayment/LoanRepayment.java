@@ -17,6 +17,10 @@ public class LoanRepayment {
             principalAmount = paymentAmount*(Math.pow((1+interestRate),-(1+loanPeriod -(count +1))));
             principalPrint = Math.round(principalAmount * 100.0) / 100.0;
             data[count][2] = principalPrint; // stores value
+            // Interest
+            interest = paymentAmount - principalAmount;
+            interestPrint = Math.round(interest * 100.0) / 100.0;
+            data[count][3] = interestPrint; // stores value
             
             count++;
         } while (count < totalNumberOfPayments);
