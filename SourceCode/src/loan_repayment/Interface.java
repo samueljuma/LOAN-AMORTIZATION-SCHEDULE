@@ -254,7 +254,15 @@ public class Interface extends javax.swing.JFrame {
     }//GEN-LAST:event_interestRatesFieldActionPerformed
 
     private void submitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitBtnActionPerformed
-
+        String columns[] = new String [] {"Payment No.", "Payment Amount", 
+            "Principal Amount", "Interest", "Oustanding Loan"};
+        loan_amount = Double.parseDouble(loanAmountField.getText());
+        interest_Rates= Double.parseDouble(interestRatesField.getText())/100.0;
+        loan_period = Double.parseDouble(loanPeriodField.getText());
+        LoanRepayment.Calculations(loan_amount, interest_Rates, loan_period);
+        
+       schedule.setModel(new javax.swing.table.DefaultTableModel(LoanRepayment.data,columns));
+       schedule.setVisible(true);
     }//GEN-LAST:event_submitBtnActionPerformed
 
     private void exitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBtnActionPerformed
