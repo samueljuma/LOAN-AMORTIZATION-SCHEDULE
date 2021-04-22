@@ -21,7 +21,10 @@ public class LoanRepayment {
             interest = paymentAmount - principalAmount;
             interestPrint = Math.round(interest * 100.0) / 100.0;
             data[count][3] = interestPrint; // stores value
-            
+            //Outstanding balance
+            loanOutstandingBalance = (interest / interestRate) - principalAmount;
+            balancePrint = Math.round(loanOutstandingBalance * 100.0) / 100.0;
+            data[count][4] = balancePrint;// stores value
             count++;
         } while (count < totalNumberOfPayments);
     }
