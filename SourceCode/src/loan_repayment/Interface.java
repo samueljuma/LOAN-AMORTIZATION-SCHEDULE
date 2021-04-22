@@ -262,7 +262,10 @@ public class Interface extends javax.swing.JFrame {
     }//GEN-LAST:event_exitBtnActionPerformed
 
     private void clearBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBtnActionPerformed
-
+        schedule.setVisible(false);
+        loanAmountField.setText("");
+        interestRatesField.setText("");
+        loanPeriodField.setText("");
     }//GEN-LAST:event_clearBtnActionPerformed
 
     /**
