@@ -9,3 +9,5 @@ A java Swing-based application for displaying loan amortization schedules
 #### Interface
 <image src="screenshots/1.PNG">
 
+> Screenshots
+<image src="screenshots/2.PNG">
